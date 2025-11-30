@@ -4,16 +4,6 @@ export {};
 // Configuration
 const API_BASE_URL: string = 'http://localhost:8000';
 
-// Get room parameters from URL
-const urlParams: URLSearchParams = new URLSearchParams(window.location.search);
-const roomId: string | null = urlParams.get('room');
-const language: string = urlParams.get('lang') || 'python';
-
-// Redirect if no room ID
-if (!roomId) {
-    window.location.href = 'landing.html';
-}
-
 // State interfaces
 interface RoomData {
     roomId: string;
