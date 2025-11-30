@@ -51,7 +51,7 @@ A full-stack application for real-time pair programming with WebSocket-based col
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 - **FastAPI** - Modern Python web framework
@@ -370,7 +370,7 @@ Editor Page (editor.html)
 POST /rooms
 Content-Type: application/json
 
-Request Body (optional):
+Request Body (Optional):
 {
     "language": "python",
     "initial_code": "# Start coding..."
