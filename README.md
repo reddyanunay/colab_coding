@@ -504,79 +504,28 @@ Visit `http://localhost:8000/docs` for interactive Swagger UI documentation.
 
 ## Future Improvements
 
-1. **Operational Transformation / CRDTs**
-   - Conflict-free concurrent editing
-   - Position-aware transformations
-   - More robust for 10+ users
+1. **Other Stratergies for Live editing**
 
 2. **Real AI Integration**
-   ```python
-   # OpenAI Codex or similar
-   async def get_ai_suggestion(code: str) -> str:
-       response = await openai.Completion.create(
-           model="code-davinci-002",
-           prompt=code,
-           max_tokens=50
-       )
-       return response.choices[0].text
-   ```
 
-3. **Syntax Highlighting**
-   - Monaco Editor or CodeMirror
-   - Language-specific themes
-   - Better code readability
+3. **Updated Code Editor with syntax highlighting**
 
 4. **Authentication & Authorization**
-   - User accounts (JWT tokens)
-   - Room ownership
-   - Private/public rooms
-   - Access control
 
 5. **Cursor Position Indicators**
-   - Show other users' cursors
-   - Color-coded per user
-   - Real-time position updates
 
 6. **Code Execution**
-   - Sandbox environment
-   - Run Python/JavaScript code
-   - Display output panel
 
 7. **Chat Feature**
-   - WebSocket-based chat
-   - Persistent message history
-   - @mentions
 
 8. **Version History**
-   - Git-like commits
-   - Rollback to previous versions
-   - Diff visualization
 
 9. **Multiple Files**
-   - Tab-based file system
-   - File tree navigation
-   - Import/export project
 
 10. **Theme Customization**
-    - Light/dark modes
-    - Custom color schemes
-    - Font size adjustment
 
 11. **Mobile Support**
-    - Responsive design
-    - Touch-optimized editor
-    - Mobile keyboards
 
-12. **Horizontal Scaling**
-    ```
-    ┌────────┐    ┌────────┐
-    │ Server │◄──►│ Redis  │◄──►┌────────┐
-    │   1    │    │ Pub/Sub│    │ Server │
-    └────────┘    └────────┘    │   2    │
-                                 └────────┘
-    ```
-    - Redis for cross-server messaging
-    - Load balancer
-    - Shared session store
+12. **Scaling**
 
 ---
