@@ -96,19 +96,16 @@ collaborative-coding/
 │   │       └── autocomplete_service.py
 │   ├── .env.example           # Environment variables template
 │   ├── requirements.txt       # Python dependencies
-│   ├── start.bat             # Windows startup script
 │   └── README.md             # Backend documentation
 │
 ├── frontend/                  # TypeScript Frontend
 │   ├── src/                  # TypeScript source
 │   │   ├── landing.ts        # Landing page logic
 │   │   └── editor.ts         # Editor page logic
-│   ├── dist/                 # Compiled JavaScript
 │   ├── landing.html          # Landing page
 │   ├── editor.html           # Editor page
 │   ├── tsconfig.json         # TypeScript config
-│   ├── package.json          # NPM dependencies
-│   └── start.bat            # Windows startup script
+│   └── package.json          # NPM dependencies
 │
 └── README.md                 # This file
 ```
@@ -179,18 +176,6 @@ python -m http.server 3000
 
 # Open browser
 # Navigate to http://localhost:3000/landing.html
-```
-
-### Quick Start Scripts (Windows)
-
-```bash
-# Backend
-cd backend
-start.bat
-
-# Frontend
-cd frontend
-start.bat
 ```
 
 ---
